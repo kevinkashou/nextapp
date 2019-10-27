@@ -12,6 +12,8 @@ const Home = () => (
     </Head>
     <Nav />
 
+    <img src="assets/images/logo.jpg" />
+
     <Icon />
 
     <Cta text="test" href="/test" className="" />

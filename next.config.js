@@ -1,18 +1,6 @@
-const path = require('path');
-
-module.exports = {
+const withImages = require('next-images');
+module.exports = withImages({
   webpack(config, options) {
-    config.resolve = {
-      ...config.resolve,
-      alias: {
-        ...config.resolve.alias,
-        atoms: path.resolve(__dirname, 'components/atoms'),
-        molecules: path.resolve(__dirname, 'components/molecules'),
-        organisms: path.resolve(__dirname, 'components/organisms'),
-        svgs: path.resolve(__dirname, 'public/assets/svgs'),
-      },
-    };
-
     return config;
   },
-};
+});

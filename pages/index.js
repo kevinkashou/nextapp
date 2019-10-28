@@ -1,8 +1,9 @@
 import React from 'react';
 import Head from 'next/head';
-import Nav from 'molecules/nav/nav';
-import Cta from 'atoms/cta/cta.atom';
-import Icon from 'svgs/icon.svg';
+import Nav from '@molecules/nav/nav';
+import Cta from '@atoms/cta/cta.atom';
+import Icon from '@assets/svgs/icon.svg';
+import Img from '@assets/images/logo.jpg';
 
 const Home = () => (
   <div>
@@ -12,7 +13,7 @@ const Home = () => (
     </Head>
     <Nav />
 
-    <img src="assets/images/logo.jpg" />
+    <img src={Img} />
 
     <Icon />
 
